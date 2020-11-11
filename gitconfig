@@ -48,4 +48,9 @@
   mergeoptions = --no-edit
 [user]
 	email = tomlin83@gmail.com
-	name = Tom Chang
+	name = tom chang
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
